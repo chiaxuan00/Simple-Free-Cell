@@ -5,7 +5,7 @@ import java.util.*;
 *
 *	@author Group 4
 */
-public class Card implements Comparable<Card> {
+public class Card {
 	
 	private char suit;
 	private char face;
@@ -87,7 +87,6 @@ public class Card implements Comparable<Card> {
 	*@param c  the card to be compared.
 	*@return 1 or -1 as this card's face is one point bigger or one point smaller than the specified card. 0 for other cases.
 	*/
-	@Override 
 	public int oneValueBigger(Card c){
 		//compare values between 2 cards using getFaceValue()
 		if(getFaceValue() - 1 == c.getFaceValue())   //bigger 1
